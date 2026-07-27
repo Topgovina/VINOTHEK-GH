@@ -1,6 +1,7 @@
-/*Google Font */
+/*Google Font*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap');
-/* Reset */
+
+/*Reset*/
 *{
     margin:0;
     padding:0;
@@ -11,7 +12,7 @@ body{
     background:#0f0f0f;
     color:white;
 } 
-/*Hero Section */
+/*Hero Section*/
 .hero{
     height:100vh;
     background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
@@ -215,9 +216,17 @@ body{
         font-size:28px;
         letter-spacing:1px;
     }
-
+    
     .nav-links{
-        display:none;
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:75px;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,0.95);
+    padding:20px 0;
+    text-align:center;
     }
 
     .nav-links a{
@@ -242,5 +251,8 @@ body{
     }
     .menu-toggle{
         display:block;
+    }
+    .nav-links.active{
+        display:flex;
     }
 } 
