@@ -205,7 +205,9 @@ body{
     background:black;
 }
 @media (max-width:768px){
-
+    .navbar.scrolled{
+        padding:15px 20px;
+    }
     .navbar{
         padding:15px 20px;
         justify-content:space-between;
