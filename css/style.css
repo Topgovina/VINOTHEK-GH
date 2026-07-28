@@ -355,3 +355,139 @@ body{
     }
 
 }
+/* PREMIUM BRAND TOUCH */
+
+.tagline{
+    font-family:'Playfair Display', serif;
+    color:#d4af37;
+    font-style:italic;
+    letter-spacing:1px;
+}
+
+
+/* PREMIUM CARDS */
+
+.branch-card,
+.contact-form{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(212,175,55,0.2);
+}
+
+
+/* BUTTON STYLE */
+
+.direction-btn,
+.contact-form .btn{
+
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:#d4af37;
+    color:#111;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:.4s;
+}
+
+
+.direction-btn:hover,
+.contact-form .btn:hover{
+
+    background:white;
+    transform:translateY(-3px);
+
+}
+
+
+/* MAP STYLE */
+
+.branch-card iframe{
+
+    margin-top:20px;
+    border-radius:15px;
+
+}
+
+
+/* SMOOTH ANIMATION */
+
+.branch-card,
+.contact-info,
+.contact-form{
+
+    animation:fadeUp 1s ease forwards;
+
+}
+
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.branch-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-content{
+
+flex-direction:column;
+
+}
+
+.branch-card iframe{
+
+height:250px;
+
+}
+
+}
+.tagline{
+    font-family:'Playfair Display', serif;
+    color:#d4af37;
+    font-size:12px;
+    font-style:italic;
+    letter-spacing:1px;
+    margin:0;
+}
+.footer{
+    background:#080808;
+    color:white;
+    padding:70px 10% 30px;
+    text-align:center;
+    border-top:1px solid #d4af37;
+}
+
+.footer-content{
+    margin-bottom:40px;
+}
+
+.copyright{
+    margin-top:35px;
+    padding-top:25px;
+    border-top:1px solid rgba(212,175,55,0.3);
+    color:#aaa;
+    font-size:13px;
+    letter-spacing:1px;
+}
+.logo{
+    margin-left: -50px;
+}
