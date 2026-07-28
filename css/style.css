@@ -270,3 +270,88 @@ body{
     transform:translateY(0);
 }
 } 
+/* ================= OUR BRANCHES ================= */
+
+.branches{
+    padding:80px 10%;
+    background:#111;
+    color:#fff;
+}
+
+.branches h2{
+    text-align:center;
+    font-size:2.5rem;
+    color:#d4af37;
+    margin-bottom:15px;
+    font-family:'Playfair Display', serif;
+}
+
+.branches > .container > p{
+    text-align:center;
+    color:#ccc;
+    margin-bottom:50px;
+}
+
+.branch-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:35px;
+}
+
+.branch-card{
+    background:#1b1b1b;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+    transition:0.4s ease;
+}
+
+.branch-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 40px rgba(212,175,55,.35);
+}
+
+.branch-card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.branch-card p{
+    margin:10px 0;
+    color:#ddd;
+    line-height:1.6;
+}
+
+.branch-card a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.branch-card a:hover{
+    color:#d4af37;
+}
+
+.branch-card iframe{
+    width:100%;
+    height:300px;
+    border:none;
+    border-radius:12px;
+    margin-top:20px;
+}
+
+@media (max-width:768px){
+
+    .branches{
+        padding:60px 20px;
+    }
+
+    .branch-grid{
+        grid-template-columns:1fr;
+    }
+
+    .branches h2{
+        font-size:2rem;
+    }
+
+}
